@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;700&family=Stalemate&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="css/font/flaticon.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Слонимский хлебозавод</title>
+</head>
+
+<body>
+
+  <i class="icon-menu burger-button" id="burger-menu"></i>
+
+  <nav class="nav-bar">
+    <ul class="nav-bar-options">
+      <li>
+        <a href="index.html">Главная</a>
+      </li>
+      <li>
+        <a href="about.html">О нас</a>
+      </li>
+      <li>
+        <a href="#our_products">Наша продукция</a>
+      </li>
+      <li>
+        <a href="contact.html">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="swup" class="transition-fade">
+  
+      <section class="hero" id="home">
+        <div class="hero-container">
+          <h1>Слонимский хлебозавод</h1>
+          <p>Всегда с душой</p>
+        </div>
+      </section>
+
+      <section class="about-section" id="about_us">
+        <div class="about-container">
+          <h3 class="section-id">О нас</h3>
+          <p class="content-about-subtitle">История основания</p>
+          <p class="content-about-description">Филиал «Слонимский хлебозавод» был основан в январе 1945 г, на базе 4
+            мелких пекарен, которые располагались в приспособленных помещениях в разных районах города. В 1962 году по
+            ул.Чкалова был построен типовой завод с 4 печами, а все пекарни закрыты. С 1969 года хлебозавод подвергался
+            реконструкции, постепенно приобретая современный вид.</p>
+        </div>
+      </section>
+
+      <div class="section-motto">
+        <p>Baking the world a better place</p>
+      </div>
+
+      <section class="products-section" id="our_products">
+        <div class="products-container">
+          <h3 class="section-id">Наша продукция</h3>
+
+          <div class="products-items-container">
+            <div class="img-item-container">
+              <figure class="img-container">
+                <img src="images/menu-item-1.jpg" alt="rolls tray">
+              </figure>
+              <div class="img-description">
+                <p>Sweet breads</p>
+              </div>
+            </div>
+
+            <div class="img-item-container">
+              <figure class="img-container">
+                <img src="images/menu-item-2.jpg" alt="ham bread">
+              </figure>
+              <div class="img-description">
+                <p>Holiday breads</p>
+              </div>
+            </div>
+
+            <div class="img-item-container">
+              <figure class="img-container">
+                <img src="images/menu-item-3.jpg" alt="mini bread">
+              </figure>
+              <div class="img-description">
+                <p>Mini bites</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="button-container">
+            <a href="" role="button" class="products-button">
+              Ещё...
+            </a>
+          </div>
+        </div>
+    </div>
+   
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <div class="contact-description">
+          <h3 class="section-id">Хотите связаться с нами?</h3>
+          <p>Оставьте вашу заявку и мы обязательно свяжемся с вами</p>
+        </div>
+
+        <div class="contact-form">
+          <form action="" class="form-content">
+            <label for="name">Имя</label>
+            <input type="text" placeholder="Имя" id="name">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email" id="email">
+            <label for="message">Введите ваше сообщение</label>
+            <textarea placeholder="Введите ваше сообщение" style="height:100px" id="message"></textarea>
+            <input type="submit" name="submit" value="Submit">
+          </form>
+        </div>
+
+        <div class="contact-media">
+          <div class="social-media-icons">
+            <a href="https://www.instagram.com/slonimxleb/">
+              <span class="flaticon-011-instagram"></span>
+            </a>
+          </div>
+          <p>slonimxleb@mail.grodno.by / tel: 8(015262)50331
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>2023 (с) Все права защищены.</p>
+  </footer>
+
+  <script>
+    const mobile = window.matchMedia("screen and (max-width: 540px)");
+    const navBar = document.querySelector(".nav-bar");
+    const navigationItems = document.querySelectorAll(".nav-bar a");
+    const burgerButton = document.querySelector("#burger-menu");
+
+    mobile.addListener(validation)
+
+    function validation(event) {
+      if (event.matches) {
+        burgerButton.addEventListener("click", showHide)
+      } else {
+        burgerButton.removeEventListener("click", showHide)
+      }
+    }
+    validation(mobile);
+
+    navigationItems.forEach(i => i.addEventListener('click', function () {
+      navBar.classList.remove("is-active");
+    }));
+
+    function showHide() {
+      navBar.classList.toggle("is-active");
+    }
+  </script>
+
+</html>

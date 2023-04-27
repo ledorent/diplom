@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Muli:wght@300;400;500;700&family=Stalemate&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+  <link rel="stylesheet" href="css/font/flaticon.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Слонимский хлебозавод</title>
+</head>
+
+<body>
+
+  <i class="icon-menu burger-button" id="burger-menu"></i>
+
+  <nav class="nav-bar">
+    <ul class="nav-bar-options">
+      <li>
+        <a href="index.html">Главная</a>
+      </li>
+      <li>
+        <a href="about.html">О нас</a>
+      </li>
+      <li>
+        <a href="#our_products">Наша продукция</a>
+      </li>
+      <li>
+        <a href="contact.html">Контакты</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero3" id="home">
+      <div class="hero-container3">
+        <h1>Контакты</h1>
+      </div>
+    </section>
+    <section class="contact-main">
+      <div class="contact-main-container">
+        <div class="title">
+          <h1>Реквизиты</h1>
+          <p class="title-filial">Филиал «Слонимский хлебозавод» ОАО «Гроднохлебпром»</p>
+          <p>Адрес: 231800, г. Слоним, ул. Чкалова,6<br>
+            УНН: 500041139<br>
+            ОКПО: 055422954001<br>
+            Банк: ОАО «Белагропромбанк» г.Минск , просп. Жукова,3<br>
+            р/с BY72BAPB30124503500140000000<br>
+            БИК ВАРВВY2X<br>
+          </p>
+          <p class="title-director"><span>Директор:</span> Гончаров Валерий Николаевич действует<br> на основании
+            доверенности № 22 от 01.03.2023г. </p>
+        </div>
+        <div class="administration">
+          <div class="grid">
+            <div id="item-0"><span>Администрация:</span></div>
+            <div id="item-1">Директор:<br>Главный бухгалтер:<br>Главный инженер:<br>Начальник планового отдела:<br>
+            </div>
+            <div id="item-2">Гончаров Валерий Николаевич<br>Евстрат Елена Германовна<br>Рукан Игорь
+              Владимирович<br>Мартиновская Анна Михайловна<br></div>
+          </div>
+        </div>
+        <div class="phones">
+          <div class="grid1">
+            <div id="item-0"><span>Телефоны:</span></div>
+            <div id="item-1">Тел./факс приемной<br>Плановый отдел:<br>Бухгалтерия:<br>Снабжение:<br><br>Сбыт:</div>
+            <div id="item-2">(01562) 6 – 26 – 61<br>(01562) 6 – 26 – 61<br>(01562) 5 – 11 – 32<br>(01562) 6 – 23 –
+              73<br><br>(01562) 5 – 16 – 85<br>(01562) 5 – 16 – 83</br>(01562) 6 – 24 – 84</div>
+          </div>
+        </div>
+        <div class="emails">
+          <p class="email-title"><span>Адреса электронной почты E-mail:</span></p>
+          <p class="emails-text">
+            slonimxleb@mail.grodno.by – основной общий ящик<br>
+            slonimhleb@bk.ru –гл. инженер<br>
+            slonimxleb@mail.grodno.by - отдел сбыта и маркетинга<br>
+            planslonimxleb@tut.by – начальник планового отдела<br>
+            plantrudslonimxleb@mail.ru – экономист по труду<br>
+            slonimlab@mail.ru – лаборатория<br>
+          </p>
+        </div>
+
+    </section>
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <div class="contact-description">
+          <h3 class="section-id">Хотите связаться с нами?</h3>
+          <p>Оставьте вашу заявку и мы обязательно свяжемся с вами</p>
+        </div>
+
+        <div class="contact-form">
+          <form action="" class="form-content">
+            <label for="name">Имя</label>
+            <input type="text" placeholder="Имя" id="name">
+            <label for="email">Email</label>
+            <input type="text" placeholder="Email" id="email">
+            <label for="message">Введите ваше сообщение</label>
+            <textarea placeholder="Введите ваше сообщение" style="height:100px" id="message"></textarea>
+            <input type="submit" name="submit" value="Submit">
+          </form>
+        </div>
+
+        <div class="contact-media">
+          <div class="social-media-icons">
+            <a href="https://www.instagram.com/slonimxleb/">
+              <span class="flaticon-011-instagram"></span>
+            </a>
+          </div>
+          <p>slonimxleb@mail.grodno.by / tel: 8(015262)50331
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>2023 (с) Все права защищены.</p>
+  </footer>
+
+  <script>
+    const mobile = window.matchMedia("screen and (max-width: 540px)");
+    const navBar = document.querySelector(".nav-bar");
+    const navigationItems = document.querySelectorAll(".nav-bar a");
+    const burgerButton = document.querySelector("#burger-menu");
+
+    mobile.addListener(validation)
+
+    function validation(event) {
+      if (event.matches) {
+        burgerButton.addEventListener("click", showHide)
+      } else {
+        burgerButton.removeEventListener("click", showHide)
+      }
+    }
+    validation(mobile);
+
+    navigationItems.forEach(i => i.addEventListener('click', function () {
+      navBar.classList.remove("is-active");
+    }));
+
+    function showHide() {
+      navBar.classList.toggle("is-active");
+    }
+  </script>
+</body>
+
+</html>
